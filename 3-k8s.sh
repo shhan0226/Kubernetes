@@ -29,3 +29,7 @@ sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 kubeadm version
+
+# error
+sudo rm /etc/containerd/config.toml
+sudo systemctl restart containerd
