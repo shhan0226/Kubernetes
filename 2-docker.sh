@@ -51,7 +51,6 @@ sudo mv ./daemon.json /etc/docker/.
 sudo mkdir -p /etc/systemd/system/docker.service.d
 sudo systemctl enable docker
 
-
 # grub update
 sed -i "s/GRUB_CMDLINE_LINUX=\"\"/GRUB_CMDLINE_LINUX=\"cgroup_enable=memory swapaccount=1\"/" /etc/default/grub
 update-grub
